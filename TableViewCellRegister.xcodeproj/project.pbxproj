@@ -14,6 +14,10 @@
 		CFE3D12B1FCDD030004F6274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE3D1291FCDD030004F6274 /* LaunchScreen.storyboard */; };
 		CFE3D1361FCDD030004F6274 /* TableViewCellRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE3D1351FCDD030004F6274 /* TableViewCellRegisterTests.swift */; };
 		CFE3D1411FCDD030004F6274 /* TableViewCellRegisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE3D1401FCDD030004F6274 /* TableViewCellRegisterUITests.swift */; };
+		CFE3D1531FCDD162004F6274 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE3D1521FCDD162004F6274 /* Reusable.swift */; };
+		CFE3D1551FCDD186004F6274 /* UITableViewCell+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE3D1541FCDD186004F6274 /* UITableViewCell+Reusable.swift */; };
+		CFE3D1571FCDD1A1004F6274 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE3D1561FCDD1A1004F6274 /* UITableView+Reusable.swift */; };
+		CFE3D15A1FCDD1E1004F6274 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE3D1591FCDD1E1004F6274 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		CFE3D13C1FCDD030004F6274 /* TableViewCellRegisterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCellRegisterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE3D1401FCDD030004F6274 /* TableViewCellRegisterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellRegisterUITests.swift; sourceTree = "<group>"; };
 		CFE3D1421FCDD030004F6274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE3D1521FCDD162004F6274 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		CFE3D1541FCDD186004F6274 /* UITableViewCell+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusable.swift"; sourceTree = "<group>"; };
+		CFE3D1561FCDD1A1004F6274 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		CFE3D1591FCDD1E1004F6274 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,11 @@
 		CFE3D11F1FCDD030004F6274 /* TableViewCellRegister */ = {
 			isa = PBXGroup;
 			children = (
-				CFE3D1201FCDD030004F6274 /* AppDelegate.swift */,
-				CFE3D1221FCDD030004F6274 /* ViewController.swift */,
-				CFE3D1241FCDD030004F6274 /* Main.storyboard */,
-				CFE3D1271FCDD030004F6274 /* Assets.xcassets */,
-				CFE3D1291FCDD030004F6274 /* LaunchScreen.storyboard */,
-				CFE3D12C1FCDD030004F6274 /* Info.plist */,
+				CFE3D1581FCDD1C1004F6274 /* Extensions */,
+				CFE3D14E1FCDD03A004F6274 /* App Files */,
+				CFE3D14F1FCDD052004F6274 /* Controller */,
+				CFE3D1501FCDD058004F6274 /* Model */,
+				CFE3D1511FCDD05C004F6274 /* View */,
 			);
 			path = TableViewCellRegister;
 			sourceTree = "<group>";
@@ -123,6 +130,51 @@
 				CFE3D1421FCDD030004F6274 /* Info.plist */,
 			);
 			path = TableViewCellRegisterUITests;
+			sourceTree = "<group>";
+		};
+		CFE3D14E1FCDD03A004F6274 /* App Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3D1201FCDD030004F6274 /* AppDelegate.swift */,
+				CFE3D1241FCDD030004F6274 /* Main.storyboard */,
+				CFE3D1271FCDD030004F6274 /* Assets.xcassets */,
+				CFE3D1291FCDD030004F6274 /* LaunchScreen.storyboard */,
+				CFE3D12C1FCDD030004F6274 /* Info.plist */,
+			);
+			path = "App Files";
+			sourceTree = "<group>";
+		};
+		CFE3D14F1FCDD052004F6274 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3D1221FCDD030004F6274 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFE3D1501FCDD058004F6274 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3D1521FCDD162004F6274 /* Reusable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFE3D1511FCDD05C004F6274 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3D1591FCDD1E1004F6274 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFE3D1581FCDD1C1004F6274 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFE3D1541FCDD186004F6274 /* UITableViewCell+Reusable.swift */,
+				CFE3D1561FCDD1A1004F6274 /* UITableView+Reusable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE3D1571FCDD1A1004F6274 /* UITableView+Reusable.swift in Sources */,
+				CFE3D1551FCDD186004F6274 /* UITableViewCell+Reusable.swift in Sources */,
+				CFE3D1531FCDD162004F6274 /* Reusable.swift in Sources */,
+				CFE3D15A1FCDD1E1004F6274 /* TableViewCell.swift in Sources */,
 				CFE3D1231FCDD030004F6274 /* ViewController.swift in Sources */,
 				CFE3D1211FCDD030004F6274 /* AppDelegate.swift in Sources */,
 			);
@@ -427,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableViewCellRegister/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TableViewCellRegister/App Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.colecu.TableViewCellRegister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableViewCellRegister/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TableViewCellRegister/App Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.colecu.TableViewCellRegister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
